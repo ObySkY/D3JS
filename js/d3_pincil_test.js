@@ -64,12 +64,30 @@ var data = [],
 
                     // Draw a path between the first point
                     // and the last point, to close the path.
-                    svg.append("line").attr({
+                    svg.append("path").attr({
                       "class": "terminator",
                       d: line([coords[0], coords[coords.length-1]])
                     });
                   });
 
+
+  for (i=0; i<50; i++) {
+    data.push({
+      id: i,
+      a: {
+        x: randomPoint(),
+        y: randomPoint()
+      },
+      b: {
+        x: randomPoint(), 
+        y: randomPoint()
+      },
+      c: {
+        x: randomPoint(),
+        y: randomPoint()
+      }
+    });
+  }
 
   function randomPoint() {
     return Math.floor(Math.random()*(width-30)) + 20;

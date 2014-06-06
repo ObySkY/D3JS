@@ -9,11 +9,12 @@ body {
 	/*color: orange;*/
 }
 svg {
-	background-color: lightgray;
+	background-color: none;
 }
 line {
     stroke: black;
-    stroke-width: 2px;
+    stroke-width: 5px;
+    z-index: 1;
 }
 .palette_ico{
 	max-width: 60px;
@@ -65,3 +66,48 @@ circle {
   fill: #ff7f0e;
   stroke: #ff7f0e;
 }
+
+
+/* 333 */
+
+
+  body {
+        padding-left: 15px;
+      }
+      .intro {
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+      }
+      #canvases {
+        width: 960px;
+        height: 300px;
+      }
+      .canvas {
+        float: left;
+        border: 1px solid gray;
+        width: 300px;
+        height: 300px;
+        margin-right: 10px;
+      }
+      svg {
+        cursor: crosshair;
+      }
+      circle {
+        fill: steelblue;
+        opacity: 0.75;
+      }
+      circle.highlighted {
+        fill: orange;
+      }
+      path {
+        stroke: gray;
+        stroke-width: 1;
+        fill: none;
+      }
+      text {
+        font-size: 10px;
+        text-anchor: middle;
+        pointer-events: none;
+        fill: #000;
+        font-family: Arial, sans-serif;
+      }

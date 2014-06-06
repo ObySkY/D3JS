@@ -11,20 +11,18 @@
   
   <script src="js/d3_pincil.js"></script>
 
-  <script src="js/d3_lines.js"></script>
+    <!--
+  <script src="js/d3_pincil_test.js"></script>
+
+    <script src="js/d3_lines.js"></script>
   <script src="js/d3_click_lines.js"></script>
-
-
-
-
-
-
+-->
 
 </head>
 <body>
   
-<br>
-BODY
+<!-- BODY VIEW -->
+
 <div id="container">
 	<div id="tableau_palette">
 		<?php include ("views/palette.php"); ?>
